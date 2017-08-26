@@ -28,15 +28,16 @@ module.exports = function (client) {
         message.channel.send('Vous n\'avez pas les permissions requises pour cela.')
         console.log(h + ' Tentative de ban par: ' + nom)
       }
+      if (message.content === '+ban') {
+        message.channel.sendMessage('', {embed: {
+          title: 'Command: /ban',
+          color: 777575,
+          description: '**Description:** Ban un membre du serveur \n**Usage:** +ban [user]\n**Exemple:** +ban @xxNOOBxx',
+          footer: {
+            text: 'Message par Teste Bot.'
+          }}})
+      }
     }
-    if (message.content === '+ban') {
-      message.channel.sendMessage('', {embed: {
-        title: 'Command: /ban',
-        color: 777575,
-        description: '**Description:** Ban un membre du serveur \n**Usage:** +ban [user]\n**Exemple:** +ban @xxNOOBxx',
-        footer: {
-          text: 'Message par Teste Bot.'
-        }}})
-    }
+
   })
 }

@@ -1,4 +1,4 @@
-else if(message.content.startsWith(prefix +'mute')){
+ if(message.content.startsWith(prefix +'mute')){
     let modRole = message.guild.roles.find("name", "Mod");
 if(!message.guild.roles.exists("name", "mute")) {
 return  message.channel.sendMessage("", {embed: {
