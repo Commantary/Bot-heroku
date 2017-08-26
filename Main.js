@@ -26,4 +26,4 @@ kick(client)
 const ban = require('./module/ban.js')
 ban(client)
 
-client.login(process.TOKEN)
+client.login(TOKEN)
