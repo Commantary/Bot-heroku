@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-
+const token = process.env.TOKEN || process.argv[2];
 const client = new Discord.Client()
 
 client.on('ready', () => {
@@ -26,4 +26,4 @@ kick(client)
 const ban = require('./module/ban.js')
 ban(client)
 
-client.login(TOKEN)
+client.login(token)
