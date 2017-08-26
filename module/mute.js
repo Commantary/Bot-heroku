@@ -14,7 +14,7 @@ module.exports = function (client) {
 
       if (!message.member.roles.has(muteRole.id)) {
         message.channel.sendMessage("", {embed: {
-
+            
         }}
       } else {
           client.member.role.
