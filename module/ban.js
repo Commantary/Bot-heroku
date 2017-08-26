@@ -29,5 +29,14 @@ module.exports = function (client) {
         console.log(h + ' Tentative de ban par: ' + nom)
       }
     }
+    if (message.content === '+ban') {
+      message.channel.sendMessage('', {embed: {
+        title: 'Command: /ban',
+        color: 777575,
+        description: '**Description:** Ban un membre du serveur \n**Usage:** +ban [user]\n**Exemple:** +ban @xxNOOBxx',
+        footer: {
+          text: 'Message par Teste Bot.'
+        }}})
+    }
   })
 }
